@@ -2,7 +2,7 @@
   // Vim
   "vim.leader": "space",
   "vim.highlightedyank.enable": true,
-  "vim.hlsearch": false,
+  "vim.hlsearch": true,
   "vim.highlightedyank.duration": 50,
   "vim.useSystemClipboard": true,
   "vim.smartRelativeLine": true,
@@ -14,17 +14,13 @@
   "vim.easymotionKeys": "qwertyuiopasdfghjklzcvbnm[];',./",
   "vim.normalModeKeyBindings": [
     // Utils
-    // {
-    //   "before": ["-"],
-    //   "after": ["@"]
-    // },
-    // {
-    //   "before": [";"],
-    //   "after": [":"]
-    // },
     {
       "before": ["Y"],
       "after": ["y", "$"]
+    },
+    {
+      "before": ["Esc"],
+      "commands": [":nohl"]
     },
     {
       "before": ["enter"],
@@ -106,10 +102,6 @@
       "before": ["leader", "s", "s"],
       "commands": ["workbench.action.gotoSymbol"]
     },
-    // {
-    //   "before": ["tab"],
-    //   "commands": ["workbench.action.nextEditorInGroup"]
-    // },
     {
       "before": ["leader", "q"],
       "commands": ["workbench.actions.view.problems"]
@@ -218,6 +210,12 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "files.associations": {
     "*.css": "tailwindcss"
   },
@@ -226,10 +224,6 @@
   },
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
-  },
-  "workbench.colorCustomizations": {
-    "editorIndentGuide.activeBackground1": "#645773"
-    // "statusBar.background": "#007acc4b"
   },
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.codeLensFontFamily": "JetBrainsMono Nerd Font",
@@ -278,15 +272,23 @@
   "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
   "terminal.integrated.fontWeight": "bold",
   "workbench.colorTheme": "Kanagawa",
-  "workbench.iconTheme": "eq-material-theme-icons-palenight",
-  "[astro]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "window.customTitleBarVisibility": "auto",
   "github.copilot.editor.enableAutoCompletions": true,
   "workbench.activityBar.location": "hidden",
   "workbench.editor.limit.value": 1,
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
-  "workbench.editor.showTabs": "none"
+  "workbench.editor.showTabs": "none",
+  "workbench.colorCustomizations": {
+    "editorIndentGuide.activeBackground1": "#645773",
+    "editor.background": "#121212"
+  },
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "editor.linkedEditing": true,
+  "workbench.iconTheme": "eq-material-theme-icons-deepforest"
 }
