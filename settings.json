@@ -227,7 +227,6 @@
       "comments": {
         "foreground": "#9CA1AA"
       }
-      //Change the color of the text behind cursor:
     }
   },
   "window.zoomLevel": 1,
