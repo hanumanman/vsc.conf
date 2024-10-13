@@ -10,7 +10,7 @@
   "vim.easymotionMarkerForegroundColorOneChar": "#EE5959",
   "vim.easymotionMarkerForegroundColorTwoCharFirst": "#EE5959",
   "vim.easymotionMarkerForegroundColorTwoCharSecond": "#569CD6",
-  "vim.easymotionKeys": "qwertyuiopasdfghjklzcvbnm[];',./",
+  "vim.easymotionKeys": "asdfghjkl",
   "vim.normalModeKeyBindings": [
     {
       "before": ["Y"],
@@ -30,7 +30,7 @@
     },
     {
       "before": ["m"],
-      "after": ["leader", "leader", "s"]
+      "after": ["leader", "leader", "/"]
     },
     {
       "before": ["<leader>", "f"],
@@ -65,7 +65,7 @@
       "commands": ["workbench.action.terminal.toggleTerminal"]
     },
     {
-      "before": ["leader", "leader"],
+      "before": ["leader", "z"],
       "commands": ["workbench.action.toggleZenMode"],
       "when": "!isAuxiliaryWindowFocusedContext"
     },
@@ -162,6 +162,12 @@
   ],
   "vim.visualModeKeyBindings": [
     {
+      "before": ["leader", "r"],
+      "commands": ["git.revertSelectedRanges"],
+      "after": ["esc"],
+      "when": " !operationInProgress"
+    },
+    {
       "before": ["<leader>", "/"],
       "commands": ["editor.action.commentLine"],
       "when": "editorTextFocus && !editorReadonly"
@@ -208,6 +214,9 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[handlebars]": {
+    "editor.defaultFormatter": "mfeckies.handlebars-formatter"
+  },
   "files.associations": {
     "*.css": "tailwindcss"
   },
@@ -230,7 +239,7 @@
     }
   },
   "window.zoomLevel": 1,
-  "editor.fontSize": 14,
+  "editor.fontSize": 13.8,
   "editor.fontWeight": "600",
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.codeLensFontFamily": "JetBrainsMono Nerd Font",
@@ -249,21 +258,17 @@
   "editor.wordWrap": "on",
   "turboConsoleLog.logMessagePrefix": "TODO: Delete 🚀",
   "editor.fontLigatures": true,
-  "workbench.startupEditor": "none",
+  "workbench.startupEditor": "readme",
   "gitlens.blame.fontFamily": "JetBrainsMono Nerd Font",
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "javascript.inlayHints.enumMemberValues.enabled": true,
   "security.workspace.trust.untrustedFiles": "open",
   "gitlens.currentLine.enabled": false,
   "workbench.editor.editorActionsLocation": "hidden",
-  "editor.guides.bracketPairsHorizontal": false,
-  "editor.guides.bracketPairs": "active",
-  "editor.guides.highlightActiveIndentation": true,
   "extensions.ignoreRecommendations": true,
   "window.customMenuBarAltFocus": true,
-  "scm.diffDecorations": "none",
+  "scm.diffDecorations": "gutter",
   "keyboard.dispatch": "keyCode",
-  "editor.smoothScrolling": true,
   "editor.stickyScroll.enabled": false,
   "workbench.tree.indent": 14,
   "workbench.tree.renderIndentGuides": "none",
@@ -274,7 +279,7 @@
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.showTabs": "multiple",
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "plaintext": false,
     "markdown": true,
     "scminput": false
@@ -296,5 +301,10 @@
   "window.menuBarVisibility": "toggle",
   "editor.experimental.treeSitterTelemetry": true,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Kanagawa"
+  "vim.showMarksInGutter": true,
+  "supermaven.otherWarning": false,
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+  "editor.guides.indentation": false,
+  "editor.guides.highlightActiveIndentation": false
 }
