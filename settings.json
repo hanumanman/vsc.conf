@@ -5,7 +5,7 @@
   "vim.highlightedyank.duration": 50,
   "vim.useSystemClipboard": true,
   "vim.smartRelativeLine": true,
-  "editor.cursorSurroundingLines": 8,
+  "editor.cursorSurroundingLines": 15,
   "vim.easymotion": true,
   "vim.easymotionMarkerForegroundColorOneChar": "#EE5959",
   "vim.easymotionMarkerForegroundColorTwoCharFirst": "#EE5959",
@@ -55,6 +55,10 @@
     {
       "before": ["leader", "i", "s"],
       "commands": ["editor.action.organizeImports"]
+    },
+    {
+      "before": ["leader", "i", "a"],
+      "commands": ["editor.action.addMissingImports"]
     },
     {
       "before": ["<leader>", "n"],
@@ -168,14 +172,17 @@
     },
     {
       "before": ["leader", "r", "r"],
-      "commands": ["git.revertSelectedRanges"],
+      "commands": ["git.revertSelectedRanges"]
+    },
+    {
+      "before": ["leader", "r", "R"],
+      "commands": ["workbench.action.files.revert"]
     }
   ],
   "vim.visualModeKeyBindings": [
     {
       "before": ["leader", "r"],
       "commands": ["git.revertSelectedRanges"],
-      "after": ["esc"],
       "when": " !operationInProgress"
     },
     {
@@ -249,7 +256,7 @@
       }
     }
   },
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0.5,
   "editor.fontSize": 13,
   "editor.fontWeight": "600",
   "editor.fontFamily": "JetBrainsMono Nerd Font",
@@ -316,7 +323,9 @@
   "html.format.indentInnerHtml": true,
   "editor.guides.highlightActiveIndentation": false,
   "gitlens.blame.separateLines": false,
-  "workbench.colorTheme": "Everforest Dark",
   "gruvboxMaterial.darkSelection": "blue",
-  "explorer.confirmPasteNative": false
+  "explorer.confirmPasteNative": false,
+  "window.customTitleBarVisibility": "auto",
+  "editor.smoothScrolling": true,
+  "terminal.integrated.scrollback": 200
 }
