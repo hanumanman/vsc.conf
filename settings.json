@@ -17,7 +17,11 @@
       "after": ["y", "$"]
     },
     {
-      "before": ["leader", "Esc"],
+      "before": ["leader", "m"],
+      "commands": [":delmarks!"]
+    },
+    {
+      "before": ["leader", "esc"],
       "commands": [":nohl"]
     },
     {
@@ -29,7 +33,7 @@
       "after": ["O", "escape"]
     },
     {
-      "before": ["m"],
+      "before": ["s"],
       "after": ["leader", "leader", "/"]
     },
     {
@@ -256,8 +260,8 @@
       }
     }
   },
-  "window.zoomLevel": 0.5,
-  "editor.fontSize": 13,
+  "window.zoomLevel": 1,
+  "editor.fontSize": 13.76,
   "editor.fontWeight": "600",
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.codeLensFontFamily": "JetBrainsMono Nerd Font",
@@ -316,7 +320,7 @@
   "zenMode.fullScreen": false,
   "window.menuBarVisibility": "toggle",
   "editor.experimental.treeSitterTelemetry": true,
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "icons",
   "vim.showMarksInGutter": true,
   "supermaven.otherWarning": false,
   "html.format.indentHandlebars": true,
@@ -327,5 +331,6 @@
   "explorer.confirmPasteNative": false,
   "window.customTitleBarVisibility": "auto",
   "editor.smoothScrolling": true,
-  "terminal.integrated.scrollback": 200
+  "terminal.integrated.scrollback": 200,
+  "workbench.colorTheme": "Gruvbox Dark Hard"
 }
