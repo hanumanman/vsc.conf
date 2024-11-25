@@ -94,7 +94,7 @@
       "commands": ["workbench.action.quickOpen"]
     },
     {
-      "before": ["leader", "g"],
+      "before": ["leader", "v"],
       "commands": ["workbench.action.quickTextSearch"]
     },
     {
@@ -190,6 +190,10 @@
       "when": " !operationInProgress"
     },
     {
+      "before": ["leader", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
       "before": ["<leader>", "/"],
       "commands": ["editor.action.commentLine"],
       "when": "editorTextFocus && !editorReadonly"
@@ -261,7 +265,8 @@
     }
   },
   "window.zoomLevel": 1,
-  "editor.fontSize": 13.76,
+  // "editor.fontSize": 13.76,
+  "editor.fontSize": 13,
   "editor.fontWeight": "600",
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.codeLensFontFamily": "JetBrainsMono Nerd Font",
@@ -278,7 +283,7 @@
   "window.commandCenter": false,
   "editor.wordWrap": "on",
   "turboConsoleLog.logMessagePrefix": "TODO: Delete 🚀",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": false,
   "workbench.startupEditor": "readme",
   "gitlens.blame.fontFamily": "JetBrainsMono Nerd Font",
   "typescript.inlayHints.enumMemberValues.enabled": true,
@@ -300,7 +305,7 @@
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.showTabs": "multiple",
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "plaintext": false,
     "markdown": true,
     "scminput": false
@@ -314,7 +319,8 @@
   "zenMode.hideStatusBar": false,
   "workbench.layoutControl.enabled": false,
   "editor.cursorBlinking": "solid",
-  "zenMode.hideActivityBar": false,
+  "zenMode.hideActivityBar": true,
+  "zenMode.centerLayout": false,
   "zenMode.restore": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.fullScreen": false,
@@ -322,7 +328,6 @@
   "editor.experimental.treeSitterTelemetry": true,
   "workbench.iconTheme": "icons",
   "vim.showMarksInGutter": true,
-  "supermaven.otherWarning": false,
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": true,
   "editor.guides.highlightActiveIndentation": false,
@@ -332,5 +337,8 @@
   "window.customTitleBarVisibility": "auto",
   "editor.smoothScrolling": true,
   "terminal.integrated.scrollback": 200,
-  "workbench.colorTheme": "Gruvbox Dark Hard"
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.lineHeight": 1,
+  "errorLens.fontFamily": "JetBrainsMono Nerd Font",
+  "errorLens.fontSize": "11"
 }
