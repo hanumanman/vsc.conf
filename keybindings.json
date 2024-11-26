@@ -6,6 +6,11 @@
     "when": "filesExplorerFocus && !inputFocus"
   },
   {
+    "key": "q",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
     "key": "space g",
     "command": "workbench.action.toggleSidebarVisibility",
     "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
