@@ -7,9 +7,9 @@
   "vim.smartRelativeLine": true,
   "editor.cursorSurroundingLines": 15,
   "vim.easymotion": true,
-  "vim.easymotionMarkerForegroundColorOneChar": "#EE5959",
-  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#EE5959",
-  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#569CD6",
+  "vim.easymotionMarkerForegroundColorOneChar": "#4EC9B0",
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#4EC9B0",
+  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#9CDCFE",
   "vim.easymotionKeys": "asdfghjkl",
   "vim.normalModeKeyBindings": [
     {
@@ -21,7 +21,7 @@
       "commands": [":delmarks!"]
     },
     {
-      "before": ["leader", "esc"],
+      "before": ["esc"],
       "commands": [":nohl"]
     },
     {
@@ -61,11 +61,7 @@
       "commands": ["editor.action.organizeImports"]
     },
     {
-      "before": ["leader", "i", "a"],
-      "commands": ["editor.action.addMissingImports"]
-    },
-    {
-      "before": ["<leader>", "n"],
+      "before": [","],
       "commands": ["workbench.view.explorer"]
     },
     {
@@ -186,8 +182,24 @@
   "vim.visualModeKeyBindings": [
     {
       "before": ["leader", "r"],
-      "commands": ["git.revertSelectedRanges"],
-      "when": " !operationInProgress"
+      "commands": ["git.revertSelectedRanges"]
+    },
+    {
+      "before": ["v"],
+      "after": ["a", "f"]
+    },
+    {
+      "before": ["V"],
+      "commands": ["editor.action.smartSelect.shrink"]
+    },
+    {
+      "before": ["leader", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["leader", "r", "n"],
+      "commands": ["editor.action.rename"],
+      "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
     },
     {
       "before": ["leader", "c", "a"],
@@ -240,9 +252,6 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[handlebars]": {
-    "editor.defaultFormatter": "mfeckies.handlebars-formatter"
-  },
   "files.associations": {
     "*.css": "tailwindcss"
   },
@@ -264,7 +273,7 @@
       }
     }
   },
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0.3,
   // "editor.fontSize": 13.76,
   "editor.fontSize": 13,
   "editor.fontWeight": "600",
@@ -279,7 +288,6 @@
   "chat.editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.suggest.insertMode": "replace",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.minimap.enabled": false,
   "window.commandCenter": false,
   "editor.wordWrap": "on",
   "turboConsoleLog.logMessagePrefix": "TODO: Delete 🚀",
@@ -305,15 +313,12 @@
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.showTabs": "multiple",
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": true,
     "scminput": false
   },
   "editor.linkedEditing": false,
-  "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  },
   "telemetry.telemetryLevel": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "zenMode.hideStatusBar": false,
@@ -326,19 +331,53 @@
   "zenMode.fullScreen": false,
   "window.menuBarVisibility": "toggle",
   "editor.experimental.treeSitterTelemetry": true,
-  "workbench.iconTheme": "icons",
   "vim.showMarksInGutter": true,
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": true,
   "editor.guides.highlightActiveIndentation": false,
   "gitlens.blame.separateLines": false,
-  "gruvboxMaterial.darkSelection": "blue",
   "explorer.confirmPasteNative": false,
   "window.customTitleBarVisibility": "auto",
-  "editor.smoothScrolling": true,
   "terminal.integrated.scrollback": 200,
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.lineHeight": 1,
-  "errorLens.fontFamily": "JetBrainsMono Nerd Font",
-  "errorLens.fontSize": "11"
+  "workbench.iconTheme": "material-icon-theme",
+  "glassit-linux.opacity": 99,
+  "editor.minimap.enabled": false,
+  "color-highlight.markerType": "dot-after",
+  "color-highlight.markRuler": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "totalTypeScript.hiddenTips": [
+    "typing-function-parameters",
+    "basic-types",
+    "any-type",
+    "variable-type-annotation",
+    "passing-generics-to-types",
+    "partial-utility-type",
+    "type-alias-declaration",
+    "type-alias-with-generics",
+    "ts-object-type",
+    "optional-object-property",
+    "interface-declaration",
+    "interface-with-generics",
+    "array-type",
+    "generic-slots-in-functions",
+    "function-return-type",
+    "as-assertion",
+    "as-const",
+    "as-const-on-object",
+    "union-type",
+    "null-keyword",
+    "record-utility-type",
+    "non-null-expression",
+    "undefined-keyword"
+  ],
+  "todohighlight.keywords": [
+    {
+      "text": "TODO:",
+      "color": "#32302f",
+      "backgroundColor": "#7daea3"
+    }
+  ],
+  "workbench.colorTheme": "Gruvbox Material Dark"
 }
