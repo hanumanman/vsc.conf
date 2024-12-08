@@ -7,9 +7,10 @@
   "vim.smartRelativeLine": true,
   "editor.cursorSurroundingLines": 15,
   "vim.easymotion": true,
-  "vim.easymotionMarkerForegroundColorOneChar": "#4EC9B0",
-  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#4EC9B0",
-  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#9CDCFE",
+  "vim.easymotionMarkerForegroundColorOneChar": "#ea6962",
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#ea6962",
+  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#ea6962",
+  "vim.easymotionIncSearchForegroundColor": "#ea6962",
   "vim.easymotionKeys": "asdfghjkl",
   "vim.normalModeKeyBindings": [
     {
@@ -34,7 +35,7 @@
     },
     {
       "before": ["s"],
-      "after": ["leader", "leader", "/"]
+      "after": ["leader", "leader", "leader", "b", "d", "w"]
     },
     {
       "before": ["<leader>", "f"],
