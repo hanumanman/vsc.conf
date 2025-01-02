@@ -40,6 +40,12 @@
     "command": "filesExplorer.paste",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
   },
+  // Project search controls
+  {
+    "key": "ctrl+j",
+    "command": "search.action.focusSearchList",
+    "when": "inputFocus && searchViewletFocus"
+  },
   // Navigating menus
   {
     "key": "ctrl+n",
@@ -108,5 +114,10 @@
     "key": "o",
     "command": "workbench.actions.view.problems",
     "when": "focusedView == 'workbench.panel.markers.view'"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "editor.action.inlineSuggest.acceptNextWord",
+    "when": "inlineSuggestionVisible && !editorReadonly"
   }
 ]

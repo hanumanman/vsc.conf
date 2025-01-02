@@ -22,7 +22,7 @@
       "commands": [":delmarks!"]
     },
     {
-      "before": ["esc"],
+      "before": ["leader", "esc"],
       "commands": [":nohl"]
     },
     {
@@ -190,10 +190,6 @@
       "after": ["a", "f"]
     },
     {
-      "before": ["V"],
-      "commands": ["editor.action.smartSelect.shrink"]
-    },
-    {
       "before": ["leader", "c", "a"],
       "commands": ["editor.action.quickFix"]
     },
@@ -274,9 +270,9 @@
       }
     }
   },
-  "window.zoomLevel": 0.3,
+  // "window.zoomLevel": 0.1,
   // "editor.fontSize": 13.76,
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "editor.fontWeight": "600",
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.codeLensFontFamily": "JetBrainsMono Nerd Font",
@@ -326,7 +322,6 @@
   "workbench.layoutControl.enabled": false,
   "editor.cursorBlinking": "solid",
   "zenMode.hideActivityBar": true,
-  "zenMode.centerLayout": false,
   "zenMode.restore": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.fullScreen": false,
@@ -343,7 +338,7 @@
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.lineHeight": 1,
   "workbench.iconTheme": "material-icon-theme",
-  "glassit-linux.opacity": 99,
+  "glassit-linux.opacity": 97,
   "editor.minimap.enabled": false,
   "color-highlight.markerType": "dot-after",
   "color-highlight.markRuler": false,
@@ -371,7 +366,11 @@
     "null-keyword",
     "record-utility-type",
     "non-null-expression",
-    "undefined-keyword"
+    "undefined-keyword",
+    "typeof",
+    "literal-type",
+    "in-operator-narrowing",
+    "tuple-type"
   ],
   "todohighlight.keywords": [
     {
@@ -380,5 +379,14 @@
       "backgroundColor": "#7daea3"
     }
   ],
-  "workbench.colorTheme": "Gruvbox Material Dark"
+  "totalTypeScript.hideAllTips": false,
+  "totalTypeScript.hideBasicTips": false,
+  "zenMode.centerLayout": false,
+  "everforest.darkContrast": "hard",
+  "workbench.colorTheme": "Everforest Dark",
+  "everforest.darkWorkbench": "high-contrast",
+  "everforest.darkSelection": "red",
+  "everforest.highContrast": true,
+  "everforest.italicKeywords": true,
+  "editor.renderLineHighlight": "gutter"
 }
