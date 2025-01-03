@@ -1,4 +1,5 @@
 {
+  // Vim
   "vim.leader": "space",
   "vim.highlightedyank.enable": true,
   "vim.hlsearch": true,
@@ -44,14 +45,6 @@
     {
       "before": ["<leader>", "l"],
       "commands": ["turboConsoleLog.displayLogMessage"]
-    },
-    {
-      "before": ["<leader>", "t"],
-      "commands": [
-        "workbench.action.splitEditor",
-        "workbench.action.createTerminalEditor",
-        "workbench.action.closeOtherEditors"
-      ]
     },
     {
       "before": ["leader", "a"],
@@ -203,6 +196,10 @@
       "commands": ["editor.action.quickFix"]
     },
     {
+      "before": ["<leader>", "c", "s"],
+      "commands": ["editor.action.surroundWithSnippet"]
+    },
+    {
       "before": ["<leader>", "/"],
       "commands": ["editor.action.commentLine"],
       "when": "editorTextFocus && !editorReadonly"
@@ -218,8 +215,8 @@
       "when": "editorTextFocus && !editorReadonly"
     },
     {
-      "before": ["m"],
-      "after": ["leader", "leader", "s"]
+      "before": ["s"],
+      "after": ["leader", "leader", "leader", "b", "d", "w"]
     }
   ],
   "[json]": {
@@ -261,6 +258,9 @@
   "workbench.colorCustomizations": {
     "[Kanagawa]": {
       "editorCursor.background": "#413f3d"
+    },
+    "[Everforest Dark]": {
+      "editor.background": "#242424"
     }
   },
   "editor.tokenColorCustomizations": {
@@ -326,7 +326,6 @@
   "zenMode.hideLineNumbers": false,
   "zenMode.fullScreen": false,
   "window.menuBarVisibility": "toggle",
-  "editor.experimental.treeSitterTelemetry": true,
   "vim.showMarksInGutter": true,
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": true,

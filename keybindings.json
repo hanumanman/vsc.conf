@@ -1,12 +1,7 @@
 [
-  //Explorer controls
+  // Sidebar controls
   {
     "key": ",",
-    "command": "workbench.action.toggleSidebarVisibility",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "q",
     "command": "workbench.action.toggleSidebarVisibility",
     "when": "filesExplorerFocus && !inputFocus"
   },
@@ -40,11 +35,16 @@
     "command": "filesExplorer.paste",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
   },
-  // Project search controls
+
   {
     "key": "ctrl+j",
     "command": "search.action.focusSearchList",
     "when": "inputFocus && searchViewletFocus"
+  },
+  {
+    "key": "q",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "sideBarVisible && !inputFocus"
   },
   // Navigating menus
   {
@@ -89,18 +89,23 @@
   },
   //Terminal controls
   {
-    "key": "f1",
-    "command": "workbench.action.terminal.new",
-    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
-  },
-  {
     "key": "ctrl+tab",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
   },
   {
+    "key": "f1",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
     "key": "f2",
     "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.toggleMaximizedPanel",
     "when": "terminalFocus"
   },
 
