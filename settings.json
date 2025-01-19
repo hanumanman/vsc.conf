@@ -270,19 +270,19 @@
       }
     }
   },
-  // "window.zoomLevel": 0.1,
+  "window.zoomLevel": 0.5,
   // "editor.fontSize": 13.76,
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "editor.fontWeight": "600",
-  "editor.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.codeLensFontFamily": "JetBrainsMono Nerd Font",
-  "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.inlineSuggest.fontFamily": "JetBrainsMono Nerd Font",
-  "debug.console.fontFamily": "JetBrainsMono Nerd Font",
-  "scm.inputFontFamily": "JetBrainsMono Nerd Font",
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "notebook.output.fontFamily": "JetBrainsMono Nerd Font",
-  "chat.editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.codeLensFontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.inlineSuggest.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "debug.console.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "scm.inputFontFamily": "JetBrainsMono Nerd Font Mono",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "notebook.output.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "chat.editor.fontFamily": "JetBrainsMono Nerd Font Mono",
   "editor.suggest.insertMode": "replace",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "window.commandCenter": false,
@@ -290,7 +290,7 @@
   "turboConsoleLog.logMessagePrefix": "TODO: Delete 🚀",
   "editor.fontLigatures": false,
   "workbench.startupEditor": "readme",
-  "gitlens.blame.fontFamily": "JetBrainsMono Nerd Font",
+  "gitlens.blame.fontFamily": "JetBrainsMono Nerd Font Mono",
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "javascript.inlayHints.enumMemberValues.enabled": true,
   "security.workspace.trust.untrustedFiles": "open",
@@ -310,7 +310,7 @@
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.showTabs": "multiple",
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "plaintext": false,
     "markdown": true,
     "scminput": false
@@ -336,7 +336,6 @@
   "terminal.integrated.scrollback": 200,
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.lineHeight": 1,
-  "workbench.iconTheme": "material-icon-theme",
   "glassit-linux.opacity": 97,
   "editor.minimap.enabled": false,
   "color-highlight.markerType": "dot-after",
@@ -369,7 +368,8 @@
     "typeof",
     "literal-type",
     "in-operator-narrowing",
-    "tuple-type"
+    "tuple-type",
+    "type-predicate"
   ],
   "todohighlight.keywords": [
     {
@@ -382,10 +382,10 @@
   "totalTypeScript.hideBasicTips": false,
   "zenMode.centerLayout": false,
   "everforest.darkContrast": "hard",
-  "workbench.colorTheme": "Everforest Dark",
-  "everforest.darkWorkbench": "high-contrast",
-  "everforest.darkSelection": "red",
-  "everforest.highContrast": true,
+  "everforest.darkWorkbench": "flat",
   "everforest.italicKeywords": true,
-  "editor.renderLineHighlight": "gutter"
+  "editor.renderLineHighlight": "gutter",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true
 }

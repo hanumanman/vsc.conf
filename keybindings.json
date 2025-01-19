@@ -108,6 +108,16 @@
     "command": "workbench.action.toggleMaximizedPanel",
     "when": "terminalFocus"
   },
+  {
+    "key": "ctrl+f",
+    "command": "",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "",
+    "when": "terminalFocus"
+  },
 
   // Quickfix list
   {
