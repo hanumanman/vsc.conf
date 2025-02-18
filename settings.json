@@ -270,7 +270,7 @@
       }
     }
   },
-  "window.zoomLevel": 0.5,
+  "window.zoomLevel": 0.8,
   // "editor.fontSize": 13.76,
   "editor.fontSize": 13,
   "editor.fontWeight": "600",
@@ -289,10 +289,9 @@
   "editor.wordWrap": "on",
   "turboConsoleLog.logMessagePrefix": "TODO: Delete 🚀",
   "editor.fontLigatures": false,
-  "workbench.startupEditor": "readme",
+  "workbench.startupEditor": "newUntitledFile",
   "gitlens.blame.fontFamily": "JetBrainsMono Nerd Font Mono",
   "typescript.inlayHints.enumMemberValues.enabled": true,
-  "javascript.inlayHints.enumMemberValues.enabled": true,
   "security.workspace.trust.untrustedFiles": "open",
   "gitlens.currentLine.enabled": false,
   "workbench.editor.editorActionsLocation": "hidden",
@@ -300,7 +299,7 @@
   "window.customMenuBarAltFocus": true,
   "scm.diffDecorations": "gutter",
   "keyboard.dispatch": "keyCode",
-  "editor.stickyScroll.enabled": false,
+  "editor.stickyScroll.enabled": true,
   "workbench.tree.indent": 14,
   "workbench.tree.renderIndentGuides": "none",
   "terminal.integrated.fontWeight": "bold",
@@ -310,7 +309,7 @@
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.showTabs": "multiple",
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": true,
     "scminput": false
@@ -336,56 +335,27 @@
   "terminal.integrated.scrollback": 200,
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.lineHeight": 1,
-  "glassit-linux.opacity": 97,
   "editor.minimap.enabled": false,
   "color-highlight.markerType": "dot-after",
   "color-highlight.markRuler": false,
   "editor.cursorSmoothCaretAnimation": "on",
-  "totalTypeScript.hiddenTips": [
-    "typing-function-parameters",
-    "basic-types",
-    "any-type",
-    "variable-type-annotation",
-    "passing-generics-to-types",
-    "partial-utility-type",
-    "type-alias-declaration",
-    "type-alias-with-generics",
-    "ts-object-type",
-    "optional-object-property",
-    "interface-declaration",
-    "interface-with-generics",
-    "array-type",
-    "generic-slots-in-functions",
-    "function-return-type",
-    "as-assertion",
-    "as-const",
-    "as-const-on-object",
-    "union-type",
-    "null-keyword",
-    "record-utility-type",
-    "non-null-expression",
-    "undefined-keyword",
-    "typeof",
-    "literal-type",
-    "in-operator-narrowing",
-    "tuple-type",
-    "type-predicate"
-  ],
   "todohighlight.keywords": [
     {
       "text": "TODO:",
-      "color": "#32302f",
-      "backgroundColor": "#7daea3"
+      "color": "#fff",
+      "backgroundColor": "#3c383660"
     }
   ],
-  "totalTypeScript.hideAllTips": false,
-  "totalTypeScript.hideBasicTips": false,
   "zenMode.centerLayout": false,
-  "everforest.darkContrast": "hard",
-  "everforest.darkWorkbench": "flat",
-  "everforest.italicKeywords": true,
   "editor.renderLineHighlight": "gutter",
-  "workbench.colorTheme": "Gruvbox Dark Hard",
   "workbench.iconTheme": "vscode-icons",
-  "vsicons.dontShowNewVersionMessage": true
+  "vsicons.dontShowNewVersionMessage": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.plusFeatures.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "glassit.alpha": 245,
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "editor.guides.indentation": false
 }
