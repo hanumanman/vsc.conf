@@ -84,11 +84,11 @@
       "commands": ["workbench.action.quickOpen"]
     },
     {
-      "before": ["leader", "v"],
+      "before": ["leader", "d", "w"],
       "commands": ["workbench.action.quickTextSearch"]
     },
     {
-      "before": ["leader", "d"],
+      "before": ["leader", "d", "s"],
       "commands": ["workbench.action.gotoSymbol"]
     },
     {
@@ -165,17 +165,17 @@
       "commands": ["workbench.action.editor.previousChange"]
     },
     {
-      "before": ["leader", "r", "r"],
+      "before": ["leader", "h", "r"],
       "commands": ["git.revertSelectedRanges"]
     },
     {
-      "before": ["leader", "r", "R"],
+      "before": ["leader", "h", "R"],
       "commands": ["workbench.action.files.revert"]
     }
   ],
   "vim.visualModeKeyBindings": [
     {
-      "before": ["leader", "r"],
+      "before": ["leader", "h", "r"],
       "commands": ["git.revertSelectedRanges"]
     },
     {
@@ -263,26 +263,18 @@
       "editor.background": "#242424"
     }
   },
-  "editor.tokenColorCustomizations": {
-    "[Kanagawa]": {
-      "comments": {
-        "foreground": "#9CA1AA"
-      }
-    }
-  },
-  "window.zoomLevel": 0.8,
-  // "editor.fontSize": 13.76,
-  "editor.fontSize": 13,
+  "window.zoomLevel": 1.3,
+  "editor.fontSize": 13.76,
   "editor.fontWeight": "600",
-  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
-  "editor.codeLensFontFamily": "JetBrainsMono Nerd Font Mono",
-  "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font Mono",
-  "editor.inlineSuggest.fontFamily": "JetBrainsMono Nerd Font Mono",
-  "debug.console.fontFamily": "JetBrainsMono Nerd Font Mono",
-  "scm.inputFontFamily": "JetBrainsMono Nerd Font Mono",
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
-  "notebook.output.fontFamily": "JetBrainsMono Nerd Font Mono",
-  "chat.editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.codeLensFontFamily": "JetBrainsMono Nerd Font",
+  "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.inlineSuggest.fontFamily": "JetBrainsMono Nerd Font",
+  "debug.console.fontFamily": "JetBrainsMono Nerd Font",
+  "scm.inputFontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "notebook.output.fontFamily": "JetBrainsMono Nerd Font",
+  "chat.editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.suggest.insertMode": "replace",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "window.commandCenter": false,
@@ -299,7 +291,6 @@
   "window.customMenuBarAltFocus": true,
   "scm.diffDecorations": "gutter",
   "keyboard.dispatch": "keyCode",
-  "editor.stickyScroll.enabled": true,
   "workbench.tree.indent": 14,
   "workbench.tree.renderIndentGuides": "none",
   "terminal.integrated.fontWeight": "bold",
@@ -320,7 +311,6 @@
   "zenMode.hideStatusBar": false,
   "workbench.layoutControl.enabled": false,
   "editor.cursorBlinking": "solid",
-  "zenMode.hideActivityBar": true,
   "zenMode.restore": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.fullScreen": false,
@@ -328,7 +318,6 @@
   "vim.showMarksInGutter": true,
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": true,
-  "editor.guides.highlightActiveIndentation": false,
   "gitlens.blame.separateLines": false,
   "explorer.confirmPasteNative": false,
   "window.customTitleBarVisibility": "auto",
@@ -356,6 +345,16 @@
   "gitlens.plusFeatures.enabled": false,
   "gitlens.codeLens.enabled": false,
   "glassit.alpha": 245,
-  "workbench.colorTheme": "Gruvbox Dark Hard",
-  "editor.guides.indentation": false
+  "workbench.colorTheme": "Kanagawa",
+  "editor.guides.indentation": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["entity.name.function", "support.function"],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  }
 }
